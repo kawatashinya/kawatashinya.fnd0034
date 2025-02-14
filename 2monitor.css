@@ -6,7 +6,7 @@ html {
 .header_content {
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-around;
 }
 
 header div a {
@@ -19,7 +19,29 @@ header div a {
   border: 4px outset;
 }
 
+.add {
+  width: 10vw;
+  height: 5vh;
+  display: flex;
+  flex-flow: column;
+  font-size: 20px;
+  padding-right: 3%;
+  text-align: center;
+}
 
+.add#addcategory {
+  font-size: 20px;
+
+}
+
+
+.aaaaaa {
+  display: flex;
+  text-align: center;
+}
+
+
+/* 
 header div.selectstage {
   width: 30vw;
   align-items: center;
@@ -29,7 +51,7 @@ header div.selectstage {
 .serecter {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .frame {
   width: 50vw;
@@ -120,3 +142,7 @@ header div.selectstage {
   height: 5vh;
   ;
 }
+
+.frameBorder {
+  border: 5px solid darksalmon;
+} 
