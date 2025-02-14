@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/2monitor.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Factoy リアルタイムモニタ</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_content">
+      <h1>X-Factory</h1>
+      <a href="./monitor.html">1画面</a>
+      <a href="./4monitor.html">4画面</a>
+      <div>
+        <label for="addcategory">大工程</label>
+        <select name="addcategory" id="addcategory">
+          <option value=""></option>
+          <option value="中上">中上</option>
+          <option value="下地">下地</option>
+        </select>
+
+        <label for="addsubcategory">中工程</label>
+        <select name="addsubcategory" id="addsubcategory">
+          <option value=""></option>
+          <option value="前スト～クリア">前スト～クリア</option>
+          <option value="セッチング～ナイト">セッチング～ナイト</option>
+          <option value="検査～A/S">検査～A/S</option>
+        </select>
+
+        <label for="koutei">工程名</label>
+        <input id="koutei" type="text" name="koutei">
+        <label for="url">URL</label>
+        <input id="url" type="tex" name="URL">
+        <input type="button" id="submit" value="登録">
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="selectstage">
+      <details class="selecter">
+        <summary>工程選択</summary>
+        <details>
+          <summary class="category">中上</summary>
+          <details class="subcategory" id="test">
+            <summary>前スト～クリア</summary>
+            <li class="st1"><button id="1" type="button" onclick="functionNum(1)" value="http://172.20.60.213:8090/?action=stream">PET4実バーチカル入口</button></li>
+          </details>
+
+          <details class="subcategory">
+            <summary>セッチング～ナイト</summary>
+          </details>
+
+          <details class="subcategory">
+            <summary>検査～A/S</summary>
+          </details>
+        </details>
+
+        <details class="category">
+          <summary>下地</summary>
+          <details class="subcategory">
+            <summary>前処理</summary>
+          </details>
+          <details class="subcategory">
+            <summary>シーラー</summary>
+          </details>
+          <details class="subcategory">
+            <summary>スラット</summary>
+          </details>
+        </details>
+      </details>
+    </div>
+    <div class="frame">
+      <div class="frame1">
+        <p id="stagename1">工程名:</p>
+        <iframe id="monitor1" src="" width="100%" height="90%"></iframe>
+        <button class="serect1" onclick="monitorserect('monitor1', 'stagename1')">工程選択</button>
+      </div>
+      <div class="frame2">
+        <p id="stagename2">工程名:</p>
+        <iframe id="monitor2" src="" width="100%" height="90%"></iframe>
+        <button class="serect2" onclick="monitorserect('monitor2', 'stagename2')">工程選択</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  </footer>
+  <script src="js/monitor2.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+
+</html>
