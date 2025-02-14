@@ -1,0 +1,122 @@
+html {
+  background-color: slategrey;
+  font-size: 20px;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+header div a {
+  width: 10vw;
+  height: 5vh;
+  font-size: 30px;
+  text-align: center;
+  background-color: darkorange;
+  color: whitesmoke;
+  border: 4px outset;
+}
+
+
+header div.selectstage {
+  width: 30vw;
+  align-items: center;
+  text-align: center;
+}
+
+.serecter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame {
+  width: 50vw;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+
+.frame p {
+  font-size: 30px;
+}
+
+.selectstage {
+  width: 20vw;
+  right: 0;
+  position: absolute;
+}
+
+.category {
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.subcategory {
+  display: block;
+  list-style: none;
+  background-color: #444444;
+  color: azure;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.subcategory:hover {
+  background-color: darksalmon;
+}
+
+.st1 {
+  display: grid;
+  padding: 3px 10px 3px 10px;
+}
+
+.st1 button {
+  /* width: 80vw; */
+  text-align: center;
+  font-size: 20px;
+  /* padding-left: 1em;
+    padding-right: 1em; */
+}
+
+.main {
+  /* display: flex; */
+  height: 800px;
+}
+
+.selecter {
+  text-align: center;
+}
+
+.frame {
+  height: 80vh;
+  width: 100%;
+}
+
+.frame1 {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  padding-right: 1%;
+  height: 100%;
+}
+
+.frame1 button {
+  width: 10vw;
+  height: 5vh;
+  ;
+}
+
+.frame2 {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  height: 100%;
+}
+
+.frame2 button {
+  width: 10vw;
+  height: 5vh;
+  ;
+}
