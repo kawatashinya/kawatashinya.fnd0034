@@ -8,6 +8,12 @@ let stageSerect;
 function monitorserect(monitor, stage) {
   monitorSerect = monitor;
   stageSerect = stage;
+  document.getElementById(monitor).classList.add("frameBorder");
+  if (monitor === "monitor1") {
+    return   document.getElementById("monitor2").classList.remove("frameBorder");
+  } else if (monitor === "monitor2") {
+    return   document.getElementById("monitor1").classList.remove("frameBorder");
+  }
 }
 
 /**
