@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/monitor.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Factory リアルタイムモニタ</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_content">
+      <h1>X-Factory</h1>
+      <a href="./2monitor.html">2画面</a>
+      <a href="./4monitor.html">4画面</a>
+
+    </div>
+  </header>
+  <main class="main">
+    <div class="frame">
+      <h1>【モニタ】</h1>
+      <p id="stagename">工程名:</p>
+    </div>
+    <div class="selectstage">
+      <details class="selecter">
+        <summary>工程選択</summary>
+        <details>
+          <summary class="category">中上</summary>
+          <details class="subcategory" id="test">
+            <summary>前スト～クリア</summary>
+            <li class="st1"><button id="1" type="button" onclick="functionNum(1)" value="http://172.20.60.213:8090/?action=stream">PET4実バーチカル入口</button></li>
+          </details>
+
+          <details class="subcategory">
+            <summary>セッチング～ナイト</summary>
+          </details>
+
+          <details class="subcategory">
+            <summary>検査～A/S</summary>
+          </details>
+        </details>
+
+        <details class="category">
+          <summary>下地</summary>
+          <details class="subcategory">
+            <summary>前処理</summary>
+          </details>
+          <details class="subcategory">
+            <summary>シーラー</summary>
+          </details>
+          <details class="subcategory">
+            <summary>スラット</summary>
+          </details>
+        </details>
+      </details>
+    </div>
+    <iframe id="monitor" src="" width="76%" height="90%"></iframe>
+  </main>
+
+  <footer>
+  </footer>
+  <script src="js/monitor.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+
+</html>
