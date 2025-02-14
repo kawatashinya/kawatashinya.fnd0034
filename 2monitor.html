@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://kawatashinya.github.io/kawatashinya.fnd0034/2monitor.css">
+  <link rel="stylesheet" href="css/2monitor.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>X-Factoy リアルタイムモニタ</title>
 </head>
@@ -12,29 +12,44 @@
   <header>
     <div class="header_content">
       <h1>X-Factory</h1>
-      <a href="https://kawatashinya.github.io/kawatashinya.fnd0034/index.html">1画面</a>
-      <a href="https://kawatashinya.github.io/kawatashinya.fnd0034/4monitor.html">4画面</a>
-      <div>
-        <label for="addcategory">大工程</label>
-        <select name="addcategory" id="addcategory">
-          <option value=""></option>
-          <option value="中上">中上</option>
-          <option value="下地">下地</option>
-        </select>
+      <a href="./monitor.html">1画面</a>
+      <a href="./4monitor.html">4画面</a>
+      <div class="aaaaaa">
+        <div class="add">
+          <label for="addcategory">大工程</label>
+          <select name="addcategory" id="addcategory">
+            <option value=""></option>
+            <option value="中上">中上</option>
+            <option value="下地">下地</option>
+          </select>
 
-        <label for="addsubcategory">中工程</label>
-        <select name="addsubcategory" id="addsubcategory">
-          <option value=""></option>
-          <option value="前スト～クリア">前スト～クリア</option>
-          <option value="セッチング～ナイト">セッチング～ナイト</option>
-          <option value="検査～A/S">検査～A/S</option>
-        </select>
+        </div>
+        <div class="add">
+          <label for="addsubcategory">中工程</label>
+          <select name="addsubcategory" id="addsubcategory">
+            <option value=""></option>
+            <option value="前スト～クリア">前スト～クリア</option>
+            <option value="セッチング～ナイト">セッチング～ナイト</option>
+            <option value="検査～A/S">検査～A/S</option>
+          </select>
 
-        <label for="koutei">工程名</label>
-        <input id="koutei" type="text" name="koutei">
-        <label for="url">URL</label>
-        <input id="url" type="tex" name="URL">
-        <input type="button" id="submit" value="登録">
+        </div>
+        <div class="add">
+          <label for="koutei">工程名</label>
+          <input id="koutei" type="text" name="koutei">
+
+        </div>
+
+        <div class="add">
+          <label for="url">URL</label>
+          <input id="url" type="tex" name="URL">
+
+        </div>
+
+        <div class="add">
+          <input type="button" id="submit" value="登録">
+
+        </div>
       </div>
     </div>
   </header>
@@ -88,8 +103,8 @@
 
   <footer>
   </footer>
-  <script src="https://kawatashinya.github.io/kawatashinya.fnd0034/monitor2.js"></script>
-  <script src="https://kawatashinya.github.io/kawatashinya.fnd0034/edit.js"></script>
+  <script src="js/monitor2.js"></script>
+  <script src="js/edit.js"></script>
 </body>
 
 </html>
