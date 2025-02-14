@@ -25,9 +25,12 @@
         <label for="addsubcategory">中工程</label>
         <select name="addsubcategory" id="addsubcategory">
           <option value=""></option>
-          <option value="前スト～クリア">前スト～クリア</option>
+          <option value="area1">前スト～クリア</option>
           <option value="セッチング～ナイト">セッチング～ナイト</option>
           <option value="検査～A/S">検査～A/S</option>
+          <option value="area4">前処理</option>
+          <option value="シーラー">シーラー</option>
+          <option value="スラット">スラット</option>
         </select>
 
         <label for="koutei">工程名</label>
@@ -46,11 +49,10 @@
     <div class="selectstage">
       <details class="selecter">
         <summary>工程選択</summary>
-        <details>
-          <summary class="category">中上</summary>
-          <details class="subcategory" id="test">
-            <summary>前スト～クリア</summary>
-            <li class="st1"><button id="1" type="button" onclick="functionNum(1)" value="http://172.20.60.213:8090/?action=stream">PET4実バーチカル入口</button></li>
+        <details><summary class="category">中上</summary>
+          <details class="subcategory" id="area1"><summary>前スト～クリア</summary>
+            <li><button class="area1" id="1" type="button" onclick="functionNum(1)" value="http://172.20.60.213:8090/?action=stream">PET4実バーチカル入口</button></li>
+            <li><button class="area1" id="2" type="button" onclick="functionNum(2)" value="">テスト追加</button></li>
           </details>
 
           <details class="subcategory"><summary>セッチング～ナイト</summary>
@@ -61,8 +63,8 @@
         </details>
 
         <details class="category"><summary>下地</summary>
-          <details class="subcategory"><summary>前処理</summary>
-            <li class="st1"><button id="10" type="button" onclick="functionNum(10)" value="http://172.20.52.198:8090/?action=stream">ST6</button></li>
+          <details class="subcategory" id="area4"><summary>前処理</summary>
+            <li><button class="area4" id="10" type="button" onclick="functionNum(10)" value="http://172.20.52.198:8090/?action=stream">ST6</button></li>
           </details>
           <details class="subcategory"><summary>シーラー</summary>
           </details>
